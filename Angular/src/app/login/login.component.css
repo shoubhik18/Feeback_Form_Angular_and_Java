@@ -1,0 +1,139 @@
+.login {
+  /* background-color: cyan; */
+  background-image: url("../../assets/formBg.avif");
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+}
+
+.form-box {
+  margin-top: 5.2%;
+  margin-bottom: 5.2%;
+  display: grid;
+  place-items: center;
+  padding: 40px 40px;
+  width: 26%;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.9px);
+  -webkit-backdrop-filter: blur(9.9px);
+  border: 1px solid rgba(255, 255, 255, 0.33);
+}
+
+.logo {
+  width: 58%;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 14px;
+}
+
+.form {
+  width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  border: 1px solid #c2c8d0;
+  border-radius: 4px;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  transition: 0.5s;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+  border: 2px solid #a0c0d0;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  pointer-events: none;
+  color: #6f7780;
+  transition: 0.3s ease;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: 1px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: white;
+  padding: 0 4px;
+  color: #007bad;
+}
+
+.fp {
+  color: #007bad;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.fp:active {
+  background-color: #c8e5f1;
+}
+
+.form-btn {
+  color: black;
+  border: none;
+  width: 100%;
+}
+
+
+
+.pwd {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.error-msg {
+  color: red;
+}
+
+button {
+  padding: 5% 5%;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.9px);
+  -webkit-backdrop-filter: blur(9.9px);
+  border: 1px solid rgba(255, 255, 255, 0.33);
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(9.9px);
+  -webkit-backdrop-filter: blur(9.9px);
+  border: 1px solid rgba(255, 255, 255, 0.33);
+}

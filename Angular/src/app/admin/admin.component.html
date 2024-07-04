@@ -1,0 +1,34 @@
+<div class="container-fluid forms">
+  <div class="form-table text-center">
+    <h1 class="pb-4">Student Reviews</h1>
+    <div class="row">
+      <div class="col-sm-2"><h3>Email</h3></div>
+      <div class="col-sm-2"><h3>Name</h3></div>
+      <div class="col-sm-2"><h3>Ph No</h3></div>
+      <div class="col-sm-1"><h3>Trainer</h3></div>
+      <div class="col-sm-1"><h3>Batch</h3></div>
+      <div class="col-sm-2"><h3>Remarks</h3></div>
+      <div class="col-sm-1"><h3>Delete</h3></div>
+      <hr />
+    </div>
+    <div class="row" *ngFor="let form of forms">
+      <div class="col-sm-2">{{ form.email }}</div>
+      <div class="col-sm-2">{{ form.studentName }}</div>
+      <div class="col-sm-2">{{ form.phNo }}</div>
+      <div class="col-sm-1">{{ form.trainerName }}</div>
+      <div class="col-sm-1">{{ form.batch }}</div>
+      <div class="col-sm-2">{{ form.review }}</div>
+      <div class="col-sm-1">
+        <fa-icon
+          class="icon ps-3"
+          [icon]="delete"
+          (click)="removeReview(form.id)"
+        ></fa-icon>
+      </div>
+      <hr />
+    </div>
+  </div>
+</div>
+
+<div class="logout"><button class="py-2 px-3" (click)="signOut()" ><fa-icon class="icon" [icon]="fasignout"></fa-icon>
+  Sign out</button></div>
